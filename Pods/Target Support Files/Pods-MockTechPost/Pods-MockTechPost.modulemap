@@ -1,0 +1,6 @@
+module Pods_MockTechPost {
+  umbrella header "Pods-MockTechPost-umbrella.h"
+
+  export *
+  module * { export * }
+}
