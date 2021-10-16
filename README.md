@@ -2,7 +2,7 @@
 Mock app for Tech Test
 
 ## Purpose
-The purpose of this project is to built a simplpe app
+The purpose of this project is to built a simple app using swift and uikit
 
 ## Architecture
 Viper, why? because i am currently learning about viper, nothing more than that.
