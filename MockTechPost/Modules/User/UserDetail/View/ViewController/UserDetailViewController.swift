@@ -94,6 +94,12 @@ class UserDetailViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
+    
+    private func navigateToPhotoDetail(photo:PhotoEntity) {
+            let detailVC = PhotoDetailViewController()
+            detailVC.setData(photo: photo)
+            navigationController?.pushViewController(detailVC, animated: true)
+    }
 
 }
 
@@ -117,8 +123,9 @@ extension UserDetailViewController:UITableViewDelegate,UITableViewDataSource {
         let selectedPhotos = photosData.filter {$0.albumId == albumID}
         cell.configurePhotosData(photos: selectedPhotos)
         
-        cell.cellDidTapped = { photos in
-            print(photos)
+        cell.cellDidTapped = { photo in
+            print(photo)
+            self.navigateToPhotoDetail(photo: photo)
         }
         return cell
     }
