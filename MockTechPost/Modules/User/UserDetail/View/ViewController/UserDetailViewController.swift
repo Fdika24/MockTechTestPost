@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 
-class UserDetailViewController: UIViewController {
+final class UserDetailViewController: UIViewController {
     
     var presenter:UserDetailPresenterProtocol?
     private var userAlbumDatas:[AlbumEntity] = []

@@ -61,19 +61,26 @@ class PostListTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor,constant: 5),
             titleLabel.widthAnchor.constraint(equalToConstant: contentView.bounds.width - 20),
-            titleLabel.heightAnchor.constraint(equalToConstant: 50),
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,constant: 10),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,constant: -10),
             
             authorLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor,constant: 3),
             authorLabel.widthAnchor.constraint(equalToConstant: contentView.bounds.width - 20),
-            authorLabel.heightAnchor.constraint(equalToConstant: 30),
+            authorLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,constant: 10),
+            authorLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,constant: -10),
+            //authorLabel.heightAnchor.constraint(equalToConstant: 30),
             
             companyNameLabel.topAnchor.constraint(equalTo: authorLabel.bottomAnchor,constant: 3),
             companyNameLabel.widthAnchor.constraint(equalToConstant: contentView.bounds.width - 20),
-            companyNameLabel.heightAnchor.constraint(equalToConstant: 30),
+           // companyNameLabel.heightAnchor.constraint(equalToConstant: 30),
+            companyNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,constant: 10),
+            companyNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,constant: -10),
             
             bodyLabel.topAnchor.constraint(equalTo: companyNameLabel.bottomAnchor,constant: 3),
             bodyLabel.widthAnchor.constraint(equalToConstant: contentView.bounds.width - 20),
             bodyLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,constant: -5),
+            bodyLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,constant: 10),
+            bodyLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,constant: -10),
         ])
     }
     

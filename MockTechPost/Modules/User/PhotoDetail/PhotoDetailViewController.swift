@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class PhotoDetailViewController: UIViewController {
+final class PhotoDetailViewController: UIViewController {
     
     //@IBOutlet weak var TitleLabel: UILabel!
     //@IBOutlet weak var imageView: UIImageView!
