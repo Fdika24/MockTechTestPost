@@ -28,5 +28,5 @@ Viper, why? because i am currently learning about viper, nothing more than that.
 ## Bugs so far 
   1. CollectionView Inside TableViewCell can't be tapped untill you scroll them
     solution :
-            a. CollectionView inside TableView Header
-            b. Implement Compositional Layout
+      a. CollectionView inside TableView Header
+      b. Implement Compositional Layout
