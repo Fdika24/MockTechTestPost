@@ -24,9 +24,11 @@ final class RootCoordinator:RootCoordinatorProtocol {
     var window: UIWindow?
     
     func start() {
-        let dataSource = PostsDataSource()
-        let interactor = PostsInteractor(PostDataSource: dataSource)
-        let presenter = PostListPresenter(postsInteractor: interactor)
+        let dataSourcePost = PostsDataSource()
+        let dataSourceUser = UserDataSource()
+        let userInteractor = UserInteractor(userDataSource: dataSourceUser)
+        let postInteractor = PostsInteractor(PostDataSource: dataSourcePost)
+        let presenter = PostListPresenter(postsInteractor: postInteractor, userInteractor: userInteractor)
         let listPostVC = PostListViewController()
         listPostVC.presenter = presenter
         window?.rootViewController = navigationVC

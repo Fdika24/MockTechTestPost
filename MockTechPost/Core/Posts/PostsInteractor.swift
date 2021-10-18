@@ -9,7 +9,6 @@ import Foundation
 import RxSwift
 
 protocol PostsInteractorProtocol {
-    
     func getPostsData() -> Observable<[PostEntity]>
 }
 
@@ -23,6 +22,10 @@ class PostsInteractor:PostsInteractorProtocol {
     
     init(PostDataSource:PostsDataSource) {
         self.dataSource = PostDataSource
+    }
+    
+    deinit {
+        print("post interactor deinit")
     }
     
     

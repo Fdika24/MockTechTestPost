@@ -14,18 +14,17 @@ import Foundation
 struct EndPoint {
     private let link:String =  "https://jsonplaceholder.typicode.com/"
     
-    
     //MARK: Endpoint for Posts
     public func getPostsEndPoint() -> String {
         return link + "posts"
     }
     
-    public func getCommentsEndPoint() -> String {
-        return link + "comments"
+    public func getCommentsEndPoint(postID:Int) -> String {
+        return link + "comments?postId=\(postID)"
     }
     
-    public func getAlbumsEndPoint() -> String {
-        return link + "albums"
+    public func getAlbumsEndPoint(userId:Int) -> String {
+        return link + "albums?userId=\(userId)"
     }
     
     public func getPhotosEndPoint() -> String {

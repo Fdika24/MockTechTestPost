@@ -14,8 +14,8 @@ Viper, why? because i am currently learning about viper, nothing more than that.
   4. KingFisher
 
 ## Routes
-  1. List of Post page (50%)
-  2. Post Detail (0%)
+  1. List of Post page (100%)
+  2. Post Detail (90%)
   3. User Detail (0%)
   4. Photo Detail (0%)
   
