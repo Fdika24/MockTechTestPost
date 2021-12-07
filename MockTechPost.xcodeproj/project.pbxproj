@@ -229,6 +229,7 @@
 		FF51F1F4271A654000F087C0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FF51F1F5271A655900F087C0 /* EndPoint */,
 				FFB59601271A80FF00DBACBA /* ErrorHandler */,
 				FF75E664271C5C5700454ECF /* Photos */,
 				FF75E663271C5C4200454ECF /* Albums */,
@@ -236,7 +237,6 @@
 				FFB59616271B0A6500DBACBA /* Comments */,
 				FF51F201271A696000F087C0 /* Posts */,
 				FF51F206271A76A100F087C0 /* DependencyInjection */,
-				FF51F1F5271A655900F087C0 /* EndPoint */,
 			);
 			path = Core;
 			sourceTree = "<group>";

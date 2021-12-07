@@ -11,16 +11,13 @@ protocol RootCoordinatorProtocol {
     
     var window: UIWindow? {get}
     var navigationVC:UINavigationController {get}
-    
     func start()
 }
 
 
 final class RootCoordinator:RootCoordinatorProtocol {
+    
     var navigationVC: UINavigationController = UINavigationController()
-    
-    private let dependencyInjection:DependencyInjectionProtocol = DependencyInjection()
-    
     var window: UIWindow?
     
     func start() {

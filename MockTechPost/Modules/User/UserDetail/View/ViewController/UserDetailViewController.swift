@@ -65,7 +65,6 @@ final class UserDetailViewController: UIViewController {
     }
     
     private func setData() {
-        
         let dispatchGroup = DispatchGroup()
         
         dispatchGroup.enter()
@@ -122,12 +121,15 @@ extension UserDetailViewController:UITableViewDelegate,UITableViewDataSource {
         let albumID = userAlbumDatas[indexPath.section].id
         let selectedPhotos = photosData.filter {$0.albumId == albumID}
         cell.configurePhotosData(photos: selectedPhotos)
-        
         cell.cellDidTapped = { photo in
             print(photo)
             self.navigateToPhotoDetail(photo: photo)
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("makan bang")
     }
     
 }
